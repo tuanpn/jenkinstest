@@ -22,6 +22,7 @@
                             <filtering>true</filtering>
                         </resource>
                     </webResources>
+                    <outputDirectory>D:/Setup/jenkins-2.89.3/JenkinsHome/jobs/FirstMavenJob</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
