@@ -8,9 +8,17 @@
     <artifactId>JenkinsTest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+    <name>JenkinsTest</name>
 
     <build>
         <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
@@ -23,6 +31,7 @@
                         </resource>
                     </webResources>
                     <outputDirectory>D:/Setup/jenkins-2.89.3/JenkinsHome/jobs/FirstMavenJob</outputDirectory>
+                    <warName>${project.name}</warName>
                 </configuration>
             </plugin>
         </plugins>
